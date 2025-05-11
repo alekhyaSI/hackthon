@@ -1,0 +1,128 @@
+.role-selection-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+    background-color: rgba(255, 230, 153, 0.3);
+    background-image: linear-gradient(rgba(255, 230, 153, 0.3), rgba(255, 174, 66, 0.5));
+    font-family: Arial, sans-serif;
+  }
+  
+  /* White panel container */
+  .role-selection-panel {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 900px;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* Image positioning in top-left */
+  .role-selection-image {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 300px;
+    height: auto;
+  }
+  
+  .role-selection-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Content section for heading and options */
+  .role-selection-content {
+    margin-left: 320px; /* Space for the image */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .role-selection-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .role-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .role-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .role-icon {
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .role-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .role-button {
+    background-color: #0b5394;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.75rem 2rem;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+  }
+  
+  .role-option:hover .role-button {
+    background-color: #083968;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .role-selection-panel {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .role-selection-image {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      max-width: 250px;
+      margin: 0 auto 1.5rem;
+    }
+    
+    .role-selection-content {
+      margin-left: 0;
+    }
+    
+    .role-selection-heading {
+      font-size: 2rem;
+    }
+  }

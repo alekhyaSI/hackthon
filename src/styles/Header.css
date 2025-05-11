@@ -1,0 +1,34 @@
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .nav-item img {
+    width: 28px;
+    height: 28px;
+  }
+  
